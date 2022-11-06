@@ -1,7 +1,7 @@
 .animal {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@
 
 .face {
     position: absolute;
-    border: 10px solid #8E8B84;
+    border: 5px solid #8E8B84;
     background: radial-gradient(circle at 50% 60%, white, #F6E11C);
     height: 80%;
     width: 80%;
@@ -45,9 +45,9 @@
 
 .eyes {
     position: absolute;
-    left: 5%;
-    top: 20%;
-    width: 90%;
+    left: 10%;
+    top: 23%;
+    width: 80%;
     height: 50%;
 }
 
@@ -97,11 +97,11 @@
 }
 
 .eye.right .eyebag .eyeball {
-    left: -2.5%;
+    left: -10%;
 }
 
 .eye.left .eyebag .eyeball {
-    right: -2.5%;
+    right: -10%;
 }
 
 .nose {
@@ -140,7 +140,7 @@
 
 .mustache.left {
     border-bottom-right-radius: 200%;
-    border: 5px solid transparent;
+    border: 2px solid transparent;
     border-right-color: black;
     border-bottom-color: black;
     left: 20%;
@@ -148,7 +148,7 @@
 
 .mustache.right {
     border-bottom-left-radius: 200%;
-    border: 5px solid transparent;
+    border: 2px solid transparent;
     border-left-color: black;
     border-bottom-color: black;
     right: 20%;
@@ -206,10 +206,4 @@
     border-top-right-radius: 100%;
     border-bottom-right-radius: 100%;
     right: 0;
-}
-
-@media (max-width: 768px) {
-    main {
-        top: 60%;
-    }
 }
