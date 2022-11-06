@@ -1,0 +1,65 @@
+.animation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    margin-top: 50px;
+    background-image: url("../assets/mini-ilon1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 250px;
+    width: 300px;
+}
+
+.animation:hover {
+    background-image: url("../assets/mini-ilon2.png");
+    animation: opacity 1s linear;
+}
+
+.animation:active {
+    background-image: url("../assets/mini-ilon3.png");
+    animation: moving 3s ease-in forwards;
+}
+
+.animation::before {
+    text-align: center;
+    font-weight: bold;
+    content: "";
+}
+
+.animation:hover::before {
+    content: "Как тебе такое?";
+}
+
+.animation:active::before {
+    content: "Это ещё не тесла :)";
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes moving {
+    80% {
+        filter: sepia(0%);
+        transform: translate(30%, -30%)
+    }
+
+    100% {
+        filter: sepia(150%);
+        transform: translate(30%, -30%)
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        top: 60%;
+    }
+}
