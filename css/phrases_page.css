@@ -1,0 +1,37 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    width: 600px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+
+#rand {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: start;
+}
+
+p {
+    height: 30px;
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+}
+
+p.first{
+    background-color: #77daff;
+}
+
+p.second{
+    background-color: #ffb6ca;
+}

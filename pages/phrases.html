@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1">
-    <title>Korobtsov Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="..\css\style.css">
     <link rel="stylesheet" href="..\css\logo.css">
-    <link rel="stylesheet" href="..\css\flexbox_page.css">
+    <link rel="stylesheet" href="..\css\phrases_page.css">
 </head>
 
 <body>
-<header>
+<header class="menu">
     <div class="menu-wrap">
         <a href="../index.html">
             <div class="logo">
@@ -47,8 +47,14 @@
 </header>
 
 <main>
-    <h1>TASK 3. FLEXBOX</h1>
-    <div class="animation"></div>
+    <h1>TASK 4. DOM</h1>
+    <div class="content">
+        <div class="buttons">
+            <input type="button" value="Создать" onclick="createPhrase()">
+            <input type="button" value="Перекрасить" onclick="makeEvenSentencesBold()">
+        </div>
+        <div id='rand'></div>
+    </div>
 </main>
 
 
@@ -56,7 +62,7 @@
     <span>©2022 All rights reserved.</span>
     <span>Korobtsov Daniil</span>
 </footer>
+
+<script type="text/javascript" src="../js/phrases.js"/>
 </body>
-
-
 </html>
