@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logo</title>
+    <title>Drag'n'Drop</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="..\css\style.css">
     <link rel="stylesheet" href="..\css\logo.css">
-    <link rel="stylesheet" href="..\css\logo_page.css">
+    <link rel="stylesheet" href="..\css\dragndrop_page.css">
 </head>
-
 <body>
+
 <header class="menu">
     <div class="menu-wrap">
         <a href="../index.html">
@@ -49,28 +48,23 @@
 </header>
 
 <main>
-    <h1>TASK 1. LOGO</h1>
-    <div class="logo-big">
-        <div class="square">
-            <div class="internal-square">
-                <div class="rotated-square">
-                    <div class="internal-rotated-square">
-                    </div>
-                </div>
-            </div>
-            <div class="vertical-line">
-            </div>
-            <div class="horizontal-line">
-            </div>
-        </div>
+    <h1>TASK 5. Drag'n'Drop</h1>
+    <p class="rules">Разделить по признаку, компоновать в разных местах</p>
+    <div id="field">
+        <div class="draggable first_group" id="animal_1"></div>
+        <div class="draggable first_group" id="animal_2"></div>
+        <div class="draggable second_group" id="animal_3"></div>
+        <div class="draggable second_group" id="animal_4"></div>
     </div>
 </main>
 
 
 <footer>
-    <span>©2023 All rights reserved.</span>
-    <span>Korobtsov Daniil</span>
+    <p>©2023 All rights reserved.</p>
+    <p>Korobtsov Daniil</p>
 </footer>
-</body>
 
+<script type="text/javascript" src="../js/dragndrop.js"></script>
+
+</body>
 </html>
