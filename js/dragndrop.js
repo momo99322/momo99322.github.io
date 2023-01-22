@@ -151,7 +151,7 @@ document.onmousedown = function (event) {
         for (let i = 0; i < draggables.length; i++) {
             const draggable = draggables[i];
             const backgroundImageNameSplit = window.getComputedStyle(draggable).backgroundImage.split(".");
-            draggable.style.backgroundImage = backgroundImageNameSplit[0] + "_animated." + backgroundImageNameSplit[1]
+            draggable.style.backgroundImage = backgroundImageNameSplit[backgroundImageNameSplit.length - 2] + "_animated." + backgroundImageNameSplit[backgroundImageNameSplit.length - 1]
         }
     }
 
