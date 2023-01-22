@@ -150,8 +150,9 @@ document.onmousedown = function (event) {
         const draggables = document.querySelectorAll("#animal_1, #animal_2, #animal_3, #animal_4")
         for (let i = 0; i < draggables.length; i++) {
             const draggable = draggables[i];
-            const backgroundImageNameSplit = window.getComputedStyle(draggable).backgroundImage.split(".");
-            draggable.style.backgroundImage = backgroundImageNameSplit[backgroundImageNameSplit.length - 2] + "_animated." + backgroundImageNameSplit[backgroundImageNameSplit.length - 1]
+            const groups = window.getComputedStyle(draggable).backgroundImage.split("assets");
+            const backgroundImageNameSplit = groups[1].split(".")
+            draggable.style.backgroundImage = groups[0] + "assets" + backgroundImageNameSplit[0] + "_animated." + backgroundImageNameSplit[1]
         }
     }
 
